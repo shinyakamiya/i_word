@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @words.each do |word| %>
+    <div class="content_post" style="background-omage: url(<%= word.image %>);">
+      <%= simple_format(word.text) %>
+      <span class="name">
+        <%= word.name %>
+      </span>
+    </div>
+  <% end %>
+</div>
